@@ -47,9 +47,16 @@ function CustomGradientQR() {
 
   const downloadQR = () => {
     const canvas = canvasRef.current;
+    if (!canvas || !text.trim()) {
+      alert("Enter a valid URL or text before downloading!");
+      return;
+    }
+  
     const link = document.createElement("a");
     link.href = canvas.toDataURL("image/png");
-    link.download = "custom_qr.png";
+    const fileName = text.replace(/[^a-zA-Z0-9]/g, "_") + ".png";
+    link.download = fileName;
+  
     link.click();
   };
 
