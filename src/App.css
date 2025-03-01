@@ -4,7 +4,7 @@ body {
   font-family: 'Arial', sans-serif;
   text-align: center;
   background: linear-gradient(45deg, #8a2be2, #ff007f, #ff4500);
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .container {
@@ -41,17 +41,22 @@ input[type="color"] {
   cursor: pointer;
 }
 
-.generate-btn, .download-btn {
+.download-btn {
+  display: block;
+  margin: 20px auto; /* Centers the button */
+  padding: 10px 15px;
+  font-size: 16px;
   background: linear-gradient(45deg, #8a2be2, #ff007f, #ff4500);
   color: white;
-  padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
-  margin: 10px;
   transition: background 0.3s;
 }
+
+.download-btn:hover {
+  background: #ff007f;
+}x
 
 .generate-btn:hover, .download-btn:hover {
   background: #962fbf;
@@ -59,4 +64,9 @@ input[type="color"] {
 
 canvas {
   border-radius: 30px;
+}
+
+.button-container {
+  text-align: center; /* Centers the button */
+  margin-top: 20px;
 }
