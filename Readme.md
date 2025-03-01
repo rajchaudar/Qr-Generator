@@ -1,3 +1,8 @@
+# Web Live On 
+
+[QR Code Generator](https://rajchaudar.github.io/Qr-Generator)
+
+
 # QR Code Generator
 
 A simple and stylish QR Code Generator built using React. This application allows users to generate QR codes with a customized background, rounded corners, and gradient colors.
