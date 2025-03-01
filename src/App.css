@@ -1,0 +1,62 @@
+/* App.css - Custom Gradient QR Code Generator */
+
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background: linear-gradient(45deg, #8a2be2, #ff007f, #ff4500);
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+}
+
+.input-box {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.color-pickers {
+  margin: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="color"] {
+  border: none;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.generate-btn, .download-btn {
+  background: linear-gradient(45deg, #8a2be2, #ff007f, #ff4500);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  transition: background 0.3s;
+}
+
+.generate-btn:hover, .download-btn:hover {
+  background: #962fbf;
+}
+
+canvas {
+  border-radius: 30px;
+}
